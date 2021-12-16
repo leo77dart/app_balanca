@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--  importar o client do socketIO-->
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="balanca" class="container"></div>
+    <div id="produto" class="container"></div>
+    <script>
+        let socket = io();
+        socket.on('serialData', function (res) {
+           //console.log(res.data)
+           document.getElementById("balanca").innerHTML = res.balanca
+           document.getElementById("produto").innerHTML = res.produto
+        });
+    </script>
+
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+</html>

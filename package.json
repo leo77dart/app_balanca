@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@serialport/parser-byte-length": "^9.2.4",
+    "@serialport/parser-readline": "^9.2.4",
+    "chart.js": "^3.6.2",
+    "express": "^4.17.1",
+    "serialport": "^9.2.8",
+    "socket.io": "^4.4.0"
+  }
+}
